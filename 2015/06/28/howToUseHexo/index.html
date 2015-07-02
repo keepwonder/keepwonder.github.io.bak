@@ -212,7 +212,17 @@
       
 
       
-        
+        <h2 id="hexo">hexo</h2><p>npm install hexo -g #安装<br>npm update hexo -g #升级<br>hexo init  #初始化  </p>
+<h2 id="常用命令">常用命令</h2><p>hexo new “postName” #新建文章<br>hexo new page “pageName” #新建页面<br>hexo generate #生成静态页面只public目录<br>hexo server #开启本地预览服务器<br>hexo deploy #将.deploy目录部署到github<br>hexo help #查看帮助<br>hexo version #查看hexo的版本  </p>
+<h2 id="复合命令">复合命令</h2><p>hexo deploy -g #生成加部署<br>hexo server -g #生成加预览  </p>
+<h2 id="服务器命令">服务器命令</h2><p>hexo server #hexo会监视文件变动并自动更新，无需重启服务器<br>hexo server -s #静态模式<br>hexo server -p 5000 #更改端口<br>hexo server -i 192.168.1.1 #自定义IP</p>
+<h2 id="命令简写">命令简写</h2><p>hexo n == hexo new<br>hexo g == hexo generate<br>hexo s == hexo server<br>hexo p == hexo publish<br>hexo d == hexo deploy   </p>
+<h2 id="部署步骤">部署步骤</h2><ol>
+<li>hexo clean  #清除缓存，网页正常情况下可以忽略此条命令  </li>
+<li>hexo generate  #生成静态网页</li>
+<li>hexo deploy  #开始部署</li>
+</ol>
+
       
     </div>
 
@@ -228,6 +238,8 @@
       
         <div class="post-nav">
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2015/07/02/mood_1/">mood_1</a>
             
           </div>
 
@@ -324,21 +336,21 @@
         <div class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">3</span>
+              <span class="site-state-item-count">4</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
 
           <div class="site-state-item site-state-categories">
             <a href="/categories">
-              <span class="site-state-item-count">1</span>
+              <span class="site-state-item-count">2</span>
               <span class="site-state-item-name">分类</span>
               </a>
           </div>
 
           <div class="site-state-item site-state-tags">
             <a href="/tags">
-              <span class="site-state-item-count">1</span>
+              <span class="site-state-item-count">2</span>
               <span class="site-state-item-name">标签</span>
               </a>
           </div>
@@ -409,7 +421,7 @@
           <div class="post-toc">
             
             
-              <p class="post-toc-empty">此文章未包含目录</p>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#hexo"><span class="nav-number">1.</span> <span class="nav-text">hexo</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#常用命令"><span class="nav-number">2.</span> <span class="nav-text">常用命令</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#复合命令"><span class="nav-number">3.</span> <span class="nav-text">复合命令</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#服务器命令"><span class="nav-number">4.</span> <span class="nav-text">服务器命令</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#命令简写"><span class="nav-number">5.</span> <span class="nav-text">命令简写</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#部署步骤"><span class="nav-number">6.</span> <span class="nav-text">部署步骤</span></a></li></ol></div>
             
           </div>
           <div class="post-toc-indicator-bottom post-toc-indicator"></div>
