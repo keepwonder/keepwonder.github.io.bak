@@ -22,7 +22,7 @@
 
 
 
-  <meta name="keywords" content="Hexo," />
+  <meta name="keywords" content="入门," />
 
 
 
@@ -58,7 +58,7 @@
 
 
 
-  <title> howToUseHexo // QXiaoQ's BlahBlah </title>
+  <title> NodeJS(1)---Beginning of NodeJS // QXiaoQ's BlahBlah </title>
 </head>
 
 <body>
@@ -169,7 +169,7 @@
           
           
             
-              howToUseHexo
+              NodeJS(1)---Beginning of NodeJS
             
           
         </h1>
@@ -177,14 +177,14 @@
 
       <div class="post-meta">
         <span class="post-time">
-          发表于 2015-06-28
+          发表于 2015-07-11
         </span>
 
         
           <span class="post-category">
             &nbsp; | &nbsp; 分类于
             
-              <a href="/categories/Hexo使用/">Hexo使用</a>
+              <a href="/categories/Node/">Node</a>
 
               
               
@@ -197,8 +197,8 @@
           
             <span class="post-comments-count">
             &nbsp; | &nbsp;
-            <a href="/2015/06/28/howToUseHexo/#comments" >
-              <span class="post-comments-count ds-thread-count" data-thread-key="2015/06/28/howToUseHexo/"></span>
+            <a href="/2015/07/11/nodejs-1/#comments" >
+              <span class="post-comments-count ds-thread-count" data-thread-key="2015/07/11/nodejs-1/"></span>
             </a>
           </span>
           
@@ -212,16 +212,13 @@
       
 
       
-        <h2 id="hexo">hexo</h2><p>npm install hexo -g #安装<br>npm update hexo -g #升级<br>hexo init  #初始化  </p>
-<h2 id="常用命令">常用命令</h2><p>hexo new “postName” #新建文章<br>hexo new page “pageName” #新建页面<br>hexo generate #生成静态页面只public目录<br>hexo server #开启本地预览服务器<br>hexo deploy #将.deploy目录部署到github<br>hexo help #查看帮助<br>hexo version #查看hexo的版本  </p>
-<h2 id="复合命令">复合命令</h2><p>hexo deploy -g #生成加部署<br>hexo server -g #生成加预览  </p>
-<h2 id="服务器命令">服务器命令</h2><p>hexo server #hexo会监视文件变动并自动更新，无需重启服务器<br>hexo server -s #静态模式<br>hexo server -p 5000 #更改端口<br>hexo server -i 192.168.1.1 #自定义IP</p>
-<h2 id="命令简写">命令简写</h2><p>hexo n == hexo new<br>hexo g == hexo generate<br>hexo s == hexo server<br>hexo p == hexo publish<br>hexo d == hexo deploy   </p>
-<h2 id="部署步骤">部署步骤</h2><ol>
-<li>hexo clean  #清除缓存，网页正常情况下可以忽略此条命令  </li>
-<li>hexo generate  #生成静态网页</li>
-<li>hexo deploy  #开始部署</li>
-</ol>
+        <h2 id="What_is_NodeJS?">What is NodeJS?</h2><p><a href="https://nodejs.org/" target="_blank" rel="external">NodeJS</a> 官网介绍简单粗暴，是这样说的：<br>Node.js is a platform built on Chrome’s JavaScript runtime for easily building fast, scalable network applications. Node.js uses an event-driven, non-blocking I/O model that makes it lightweight and efficient, perfect for data-intensive real-time applications that run across distributed devices.</p>
+<p>翻译过来是这样：<br>Node.js是一个基于Chrome JavaScript运行环境，能够轻松搭建快速、稳定的网络应用程序的平台；Node.js采用事件驱动、非阻塞I/O模型，轻量高效，非常适合运行在分布式设备上的数据密集型、实时应用程序。</p>
+<p>key words:事件驱动？非阻塞I/O？<br>什么鬼和什么鬼？take it easy。我现在也是不完全理解，没关系，这里只是简单入个门，后续随着我的深入学习，会有相应的解释。</p>
+<h2 id="How_to_Install_NodeJS?">How to Install NodeJS?</h2><p>官网上的那个大大的绿绿的INSTALL看到了吧，对了，就是这个，点击就会下载对应系统的node版本了，写这篇文章的时候node已经出到0.12.7了，好像在这前一两天才更新到0.12.6,一看又变成7了，不禁感叹真乃神速也。不过这都不是事了，不用着急升级到最新版(如果你想体验新特性除外)，够用就好了。安装过程就是傻瓜式的安装了，不用赘述。<br>安装结束进行下一步(默认你已经在本地安装好node了)。<br>打开cmd/powershell/gitbash之类的终端输入:node -v<br><img src="/uploads/nodev.png" alt="查看node版本"><br>随node一起安装的有强大的<a href="https://www.npmjs.com" target="_blank" rel="external">npm</a>(node package manager),输入：npm -v查看npm版本<br><img src="/uploads/npmv.png" alt="查看npm版本"><br>好了，现在node和npm已经安装在开发环境中了，接下来会不时的用到它们，也会越来越熟悉怎么使用它们。</p>
+<h2 id="小结">小结</h2><p>目前为止，已经知道什么是NodeJS了，也已经安装node和npm了，接下来就是开始实战应用了。</p>
+<hr>
+<p>(to be continued…)</p>
 
       
     </div>
@@ -230,7 +227,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/Hexo/"> #Hexo </a>
+            <a href="/tags/入门/"> #入门 </a>
           
         </div>
       
@@ -239,13 +236,11 @@
         <div class="post-nav">
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2015/07/02/mood_1/">mood_1</a>
-            
           </div>
 
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2015/06/27/hello/">hello</a>
+              <a href="/2015/07/11/nodejs-is-on/">NodeJS is on</a>
             
           </div>
         </div>
@@ -288,8 +283,8 @@
     
       <div class="comments" id="comments">
         
-          <div class="ds-thread" data-thread-key="2015/06/28/howToUseHexo/"
-               data-title="howToUseHexo" data-url="http://xuanxiewu.com/2015/06/28/howToUseHexo/">
+          <div class="ds-thread" data-thread-key="2015/07/11/nodejs-1/"
+               data-title="NodeJS(1)---Beginning of NodeJS" data-url="http://xuanxiewu.com/2015/07/11/nodejs-1/">
           </div>
         
       </div>
@@ -421,7 +416,7 @@
           <div class="post-toc">
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#hexo"><span class="nav-number">1.</span> <span class="nav-text">hexo</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#常用命令"><span class="nav-number">2.</span> <span class="nav-text">常用命令</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#复合命令"><span class="nav-number">3.</span> <span class="nav-text">复合命令</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#服务器命令"><span class="nav-number">4.</span> <span class="nav-text">服务器命令</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#命令简写"><span class="nav-number">5.</span> <span class="nav-text">命令简写</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#部署步骤"><span class="nav-number">6.</span> <span class="nav-text">部署步骤</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#What_is_NodeJS?"><span class="nav-number">1.</span> <span class="nav-text">What is NodeJS?</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#How_to_Install_NodeJS?"><span class="nav-number">2.</span> <span class="nav-text">How to Install NodeJS?</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#小结"><span class="nav-number">3.</span> <span class="nav-text">小结</span></a></li></ol></div>
             
           </div>
           <div class="post-toc-indicator-bottom post-toc-indicator"></div>
