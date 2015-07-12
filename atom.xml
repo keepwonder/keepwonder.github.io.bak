@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://blog.xuanxiewu.com/Atom">
+<feed xmlns="http://blog.xuanxiewu.com/atom">
 <title type="text">QXiaoQ's BlahBlah</title>
 <subtitle type="html">...</subtitle>
 <updated></updated>
 <id></id>
 <link rel="alternate" type="text/html"
-   hreflang="en" href="http://example.org/"/>
+   hreflang="en" href="http://blog.xuanxiewu.com/"/>
 <copyright>reserved</copyright>
-<generator uri="http://www.example.com/" version="1.0"></generator>
+<generator uri="http://blog.xuanxiewu.com/" version="1.0"></generator>
 <entry>
     <title></title>
     <link rel="alternate" type="text/html"
@@ -30,6 +30,6 @@
       <uri></uri>
     </contributor>
     <content type="xhtml" xml:lang="en"
-     xml:base="http://diveintomark.org/"></content>
+     xml:base="http://blog.xuanxiewu.com/"></content>
 </entry>
 </feed>
