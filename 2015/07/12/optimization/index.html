@@ -24,7 +24,7 @@
 
 
 
-  <meta name="keywords" content="入门," />
+  <meta name="keywords" content="web前端优化," />
 
 
 
@@ -60,7 +60,7 @@
 
 
 
-  <title> NodeJS(1)---Beginning of NodeJS // QXiaoQ's BlahBlah </title>
+  <title> web前端优化(整理简化自网络) // QXiaoQ's BlahBlah </title>
 </head>
 
 <body>
@@ -189,7 +189,7 @@
           
           
             
-              NodeJS(1)---Beginning of NodeJS
+              web前端优化(整理简化自网络)
             
           
         </h1>
@@ -197,14 +197,14 @@
 
       <div class="post-meta">
         <span class="post-time">
-          发表于 2015-07-11
+          发表于 2015-07-12
         </span>
 
         
           <span class="post-category">
             &nbsp; | &nbsp; 分类于
             
-              <a href="/categories/Node/">Node</a>
+              <a href="/categories/web/">web</a>
 
               
               
@@ -217,8 +217,8 @@
           
             <span class="post-comments-count">
             &nbsp; | &nbsp;
-            <a href="/2015/07/11/nodejs-1/#comments" >
-              <span class="post-comments-count ds-thread-count" data-thread-key="2015/07/11/nodejs-1/"></span>
+            <a href="/2015/07/12/optimization/#comments" >
+              <span class="post-comments-count ds-thread-count" data-thread-key="2015/07/12/optimization/"></span>
             </a>
           </span>
           
@@ -232,12 +232,86 @@
       
 
       
-        <h2 id="What_is_NodeJS?">What is NodeJS?</h2><p><a href="https://nodejs.org/" target="_blank" rel="external">NodeJS</a> 官网介绍简单粗暴，是这样说的：<br>Node.js is a platform built on Chrome’s JavaScript runtime for easily building fast, scalable network applications. Node.js uses an event-driven, non-blocking I/O model that makes it lightweight and efficient, perfect for data-intensive real-time applications that run across distributed devices.</p>
-<p>翻译过来是这样：<br>Node.js是一个基于Chrome JavaScript运行环境，能够轻松搭建快速、稳定的网络应用程序的平台；Node.js采用事件驱动、非阻塞I/O模型，轻量高效，非常适合运行在分布式设备上的数据密集型、实时应用程序。<br><a id="more"></a><br>key words:事件驱动？非阻塞I/O？<br>什么鬼和什么鬼？take it easy。我现在也是不完全理解，没关系，这里只是简单入个门，后续随着我的深入学习，会有相应的解释。</p>
-<h2 id="How_to_Install_NodeJS?">How to Install NodeJS?</h2><p>官网上的那个大大的绿绿的INSTALL看到了吧，对了，就是这个，点击就会下载对应系统的node版本了，写这篇文章的时候node已经出到0.12.7了，好像在这前一两天才更新到0.12.6,一看又变成7了，不禁感叹真乃神速也。不过这都不是事了，不用着急升级到最新版(如果你想体验新特性除外)，够用就好了。安装过程就是傻瓜式的安装了，不用赘述。<br>安装结束进行下一步(默认你已经在本地安装好node了)。<br>打开cmd/powershell/gitbash之类的终端输入:node -v<br><img src="/uploads/nodev.png" alt="查看node版本"><br>随node一起安装的有强大的<a href="https://www.npmjs.com" target="_blank" rel="external">npm</a>(node package manager),输入：npm -v查看npm版本<br><img src="/uploads/npmv.png" alt="查看npm版本"><br>好了，现在node和npm已经安装在开发环境中了，接下来会不时的用到它们，也会越来越熟悉怎么使用它们。</p>
-<h2 id="小结">小结</h2><p>目前为止，已经知道什么是NodeJS了，也已经安装node和npm了，接下来就是开始实战应用了。</p>
-<hr>
-<p>(to be continued…)</p>
+        <p>前端的性能对于一个Web应用来说非常重要，如果一个Web应用的页面加载速度非常快、对于用户的操作可以及时响应，那么产品的用户体验将会极大地提升。<a id="more"></a></p>
+<h2 id="一、Google的web优化最佳实践">一、Google的web优化最佳实践</h2><ol>
+<li>避免坏请求</li>
+<li>避免css@import</li>
+<li>避免使用document.write</li>
+<li>合并多个外部CSS文件</li>
+<li>合并多个外部JavaScript文件</li>
+<li>通过CSS sprite来整合图像</li>
+<li>延迟JavaScript的加载</li>
+<li>启用压缩/GZIP</li>
+<li>启用Keep-Alive</li>
+<li>将小的CSS和JavaScript代码内嵌到HTML中</li>
+<li>利用浏览器缓存</li>
+<li>压缩CSS代码</li>
+<li>尽量减少DNS查询次数</li>
+<li>尽量减少重定向</li>
+<li>优化样式表和脚本的顺序</li>
+<li>避免JavaScripts阻塞渲染</li>
+<li>缩小原始图像</li>
+<li>指定图像尺寸</li>
+</ol>
+<h2 id="二、雅虎的Web优化最佳实践">二、雅虎的Web优化最佳实践</h2><ol>
+<li>内容优化：<ul>
+<li>尽量减少HTTP请求</li>
+<li>减少DNS查找</li>
+<li>避免重定向</li>
+<li>是Ajax可缓存</li>
+<li>延迟加载组件</li>
+<li>预加载组件</li>
+<li>减少DOM元素数量</li>
+<li>根据域名划分页面内容</li>
+<li>最小化iframe的数量</li>
+<li>避免404</li>
+</ul>
+</li>
+<li>服务器优化<ul>
+<li>使用内容分发网络(CDN)</li>
+<li>添加expire或cache-control信息头</li>
+<li>GZIP压缩</li>
+<li>设置Etag</li>
+<li>提前刷新缓冲区</li>
+<li>对Ajax请求使用GET方法</li>
+<li>避免空的图像src</li>
+</ul>
+</li>
+<li>Cookie优化<ul>
+<li>减小cookie大小</li>
+<li>针对web组件使用域名无关的cookie</li>
+</ul>
+</li>
+<li>CSS优化<ul>
+<li>将CSS代码放在HTML页面的顶部</li>
+<li>避免使用css表达式</li>
+<li>使用link代替@import</li>
+<li>避免使用Filter</li>
+</ul>
+</li>
+<li>JavaScript优化<ul>
+<li>将javascript脚本放在页面的底部</li>
+<li>将javascript和css作文外部文件来应用</li>
+<li>缩小javascript和css</li>
+<li>删除重复的脚本</li>
+<li>最小化DOM的访问</li>
+<li>开发智能的事件处理</li>
+</ul>
+</li>
+<li>图像优化<ul>
+<li>优化图片大小</li>
+<li>通过css sprite优化图片</li>
+<li>不要在HTML中使用缩放图片</li>
+<li>favicon.ico要小而且可缓存</li>
+</ul>
+</li>
+<li>针对移动优化<ul>
+<li>保持组件大小在25KB以下</li>
+<li>将组件打包成为一个复合文档</li>
+</ul>
+</li>
+</ol>
+<p>详情参考<a href="http://www.csdn.net/article/2013-09-23/2817020-web-performance-optimization" target="_blank" rel="external">Web前端优化最佳实践及工具集锦</a></p>
 
       
     </div>
@@ -246,7 +320,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/入门/"> #入门 </a>
+            <a href="/tags/web前端优化/"> #web前端优化 </a>
           
         </div>
       
@@ -255,13 +329,11 @@
         <div class="post-nav">
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2015/07/12/optimization/">web前端优化(整理简化自网络)</a>
-            
           </div>
 
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2015/07/11/nodejs-is-on/">NodeJS is on</a>
+              <a href="/2015/07/11/nodejs-1/">NodeJS(1)---Beginning of NodeJS</a>
             
           </div>
         </div>
@@ -304,8 +376,8 @@
     
       <div class="comments" id="comments">
         
-          <div class="ds-thread" data-thread-key="2015/07/11/nodejs-1/"
-               data-title="NodeJS(1)---Beginning of NodeJS" data-url="http://xuanxiewu.com/2015/07/11/nodejs-1/">
+          <div class="ds-thread" data-thread-key="2015/07/12/optimization/"
+               data-title="web前端优化(整理简化自网络)" data-url="http://xuanxiewu.com/2015/07/12/optimization/">
           </div>
         
       </div>
@@ -437,7 +509,7 @@
           <div class="post-toc">
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#What_is_NodeJS?"><span class="nav-number">1.</span> <span class="nav-text">What is NodeJS?</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#How_to_Install_NodeJS?"><span class="nav-number">2.</span> <span class="nav-text">How to Install NodeJS?</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#小结"><span class="nav-number">3.</span> <span class="nav-text">小结</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#一、Google的web优化最佳实践"><span class="nav-number">1.</span> <span class="nav-text">一、Google的web优化最佳实践</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#二、雅虎的Web优化最佳实践"><span class="nav-number">2.</span> <span class="nav-text">二、雅虎的Web优化最佳实践</span></a></li></ol></div>
             
           </div>
           <div class="post-toc-indicator-bottom post-toc-indicator"></div>
