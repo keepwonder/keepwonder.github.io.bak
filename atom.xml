@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://blog.xuanxiewu.com/atom">
+<feed xmlns="http://www.w3.org/2005/Atom">
 <title type="text">QXiaoQ's BlahBlah</title>
 <subtitle type="html">...</subtitle>
 <updated></updated>
 <id></id>
 <link rel="alternate" type="text/html"
-   hreflang="en" href="http://blog.xuanxiewu.com/"/>
+   hreflang="en" href="http://example.org/"/>
 <copyright>reserved</copyright>
-<generator uri="http://blog.xuanxiewu.com/" version="1.0"></generator>
+<generator uri="http://www.example.com/" version="1.0"></generator>
 <entry>
     <title></title>
     <link rel="alternate" type="text/html"
-     href="http://blog.xuanxiewu.com/atom"/>
+     href="http://example.org/2005/04/02/atom"/>
     
     <id></id>
     <updated></updated>
@@ -30,6 +30,6 @@
       <uri></uri>
     </contributor>
     <content type="xhtml" xml:lang="en"
-     xml:base="http://blog.xuanxiewu.com/"></content>
+     xml:base="http://diveintomark.org/"></content>
 </entry>
 </feed>
