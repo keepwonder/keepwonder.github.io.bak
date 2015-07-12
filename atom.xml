@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom">
-<title type="text">QXiaoQ's BlaBla</title>
+<feed xmlns="http://blog.xuanxiewu.com/Atom">
+<title type="text">QXiaoQ's BlahBlah</title>
 <subtitle type="html">...</subtitle>
 <updated></updated>
 <id></id>
@@ -11,7 +11,7 @@
 <entry>
     <title></title>
     <link rel="alternate" type="text/html"
-     href="http://example.org/2005/04/02/atom"/>
+     href="http://blog.xuanxiewu.com/atom"/>
     
     <id></id>
     <updated></updated>
