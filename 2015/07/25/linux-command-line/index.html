@@ -24,7 +24,7 @@
 
 
 
-  <meta name="keywords" content="markdown," />
+  <meta name="keywords" content="<strong>linux</strong>," />
 
 
 
@@ -60,7 +60,7 @@
 
 
 
-  <title> UsageOfMarkdown // Jockie's BlahBlah </title>
+  <title> 常用简单的Linux命令行 // Jockie's BlahBlah </title>
 </head>
 
 <body>
@@ -189,7 +189,7 @@
           
           
             
-              UsageOfMarkdown
+              常用简单的Linux命令行
             
           
         </h1>
@@ -197,7 +197,7 @@
 
       <div class="post-meta">
         <span class="post-time">
-          发表于 2015-07-02
+          发表于 2015-07-25
         </span>
 
         
@@ -217,8 +217,8 @@
           
             <span class="post-comments-count">
             &nbsp; | &nbsp;
-            <a href="/2015/07/02/UsageOfMarkdown/#comments" >
-              <span class="post-comments-count ds-thread-count" data-thread-key="2015/07/02/UsageOfMarkdown/"></span>
+            <a href="/2015/07/25/linux-command-line/#comments" >
+              <span class="post-comments-count ds-thread-count" data-thread-key="2015/07/25/linux-command-line/"></span>
             </a>
           </span>
           
@@ -232,15 +232,53 @@
       
 
       
-        <p>从第一次接触<a href="http://baike.baidu.com/link?url=Z1vVep27H45AaCTmLBLPkYPEJzH_EZ1mwJ3I1eLox_V-SiUcz0ITGRQK20zjuAFl6hIRUFIQtVJHnRbubdqd9a" target="_blank" rel="external">Markdown</a>到现在，大概也有一两年了吧。其实应该说最先接触的是MarkdownPad,我也记不清是什么时候什么原因了，以前一直以为Markdown就是MarkdownPad(恕我年少无知)，就是一款编辑器工具，一直到后来不断的接触，才知道Markdown是一门类似于html的语言，这里不介绍Markdown的种种,愿意了解可以自行百度，网上介绍的有很多，主要目的是加强自己的记忆，其实在这里写这篇文章的时候也是使用Markdown写的，所以要想记得牢还是得多写，其实多写写，就不用刻意去记忆了，下手的时候就知道怎么写了。<a id="more"></a></p>
-<h1 id="Markdown常用语法总结">Markdown常用语法总结</h1><h2 id="1-标题">1.标题</h2><p>H1 :# Header 1<br>H2 :## Header 2<br>H3 :### Header 3<br>H4 :#### Header 4<br>H5 :##### Header 5<br>H6 :###### Header 6</p>
-<h2 id="2-文本样式">2.文本样式</h2><p>链接 :<a href="#">Title</a><br>加粗 :<strong>Bold</strong><br>斜体字 :<em>Italics</em><br>删除线 :<del>text</del><br>高亮 :==text==<br>段落 : 段落之间空一行<br>换行符 : 一行结束时输入两个空格<br>列表 :* 添加星号成为一个新的列表项<br>引用 :&gt; 引用内容<br>内嵌代码 : <code>alert(&#39;Hello World&#39;);</code><br>画水平线 (HR) :————</p>
-<h2 id="3-图像">3.图像</h2><p align="center"><img src="../uploads/avatar.jpg" alt="这里插入图片"></p>
-
-<h2 id="4-写代码">4.写代码</h2><p>添加内嵌代码可以使用一对回勾号 <code>alert(&#39;Hello World&#39;)</code>.对于插入代码, Ghost支持标准的Markdown代码和GitHub Flavored Markdown (GFM)。标准Markdown基于缩进代码行或者4个空格位:<br><code>alert(&#39;Hello)</code>  </p>
-<p>GFM 使用三个回勾号```</p>
-<p>´´´ </p>
-<p><header><br>    <h4 align="center">UsageOfMarkdown</h4><br></header><br>´´´</p>
+        <h1 id="Linux常用命令">Linux常用命令</h1><h2 id="简单命令">简单命令</h2><ol>
+<li><p>ls - List<br>ls 会列举出当前工作目录的内容（文件或文件夹）</p>
+</li>
+<li><p>mkdir -Make Directory<br>新建一个目录</p>
+</li>
+<li><p>pwd -Print Working Directory<br>显示当前工作目录</p>
+</li>
+<li><p>cd - Change Directory<br>切换到指定的工作目录</p>
+</li>
+<li><p>rmdir - Remove Directory<br>删除给定的目录</p>
+</li>
+<li><p>rm - Remove<br>删除给定的文件或文件夹</p>
+</li>
+<li><p>cp - Copy<br>复制文件或文件夹</p>
+</li>
+<li><p>mv - Move<br>移动文件或文件夹，重命名文件或文件夹</p>
+</li>
+<li><p>cat - concatenate and print files<br>在标准输出（监控器或屏幕）上查看文件内容</p>
+</li>
+<li><p>tail - print TAIL(from last)<br>从文件末尾输出</p>
+</li>
+<li><p>less - print LESS<br>按页或按窗口打印文件内容</p>
+</li>
+<li><p>grep<br>在给定的文件中搜寻指定的字符串</p>
+</li>
+<li><p>find<br>在给定位置搜寻与条件匹配的文件</p>
+</li>
+<li><p>tar<br>创建、查看和提取tar文件</p>
+</li>
+<li><p>gzip<br>创建和提取gzip压缩文件</p>
+</li>
+</ol>
+<p>16.unzip<br>对gzip文件进行解压</p>
+<h2 id="进程管理命令">进程管理命令</h2><ol>
+<li>ps</li>
+<li>pstree</li>
+<li>top</li>
+<li>htop</li>
+<li>nice</li>
+<li>renice</li>
+<li>kill</li>
+<li>ulimit</li>
+<li>w</li>
+<li>pgrep</li>
+<li>fg,bg</li>
+<li>ipcs</li>
+</ol>
 
       
     </div>
@@ -249,7 +287,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/markdown/"> #markdown </a>
+            <a href="/tags/strong-linux-strong/"> #<strong>linux</strong> </a>
           
         </div>
       
@@ -258,13 +296,11 @@
         <div class="post-nav">
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2015/07/11/nodejs-is-on/">NodeJS is on</a>
-            
           </div>
 
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2015/07/02/mood_1/">mood_1</a>
+              <a href="/2015/07/18/gitbook/">Usesage of GitBook</a>
             
           </div>
         </div>
@@ -307,8 +343,8 @@
     
       <div class="comments" id="comments">
         
-          <div class="ds-thread" data-thread-key="2015/07/02/UsageOfMarkdown/"
-               data-title="UsageOfMarkdown" data-url="http://blog.xuanxiewu.com/2015/07/02/UsageOfMarkdown/">
+          <div class="ds-thread" data-thread-key="2015/07/25/linux-command-line/"
+               data-title="常用简单的Linux命令行" data-url="http://blog.xuanxiewu.com/2015/07/25/linux-command-line/">
           </div>
         
       </div>
@@ -440,7 +476,7 @@
           <div class="post-toc">
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Markdown常用语法总结"><span class="nav-number">1.</span> <span class="nav-text">Markdown常用语法总结</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-标题"><span class="nav-number">1.1.</span> <span class="nav-text">1.标题</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-文本样式"><span class="nav-number">1.2.</span> <span class="nav-text">2.文本样式</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-图像"><span class="nav-number">1.3.</span> <span class="nav-text">3.图像</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-写代码"><span class="nav-number">1.4.</span> <span class="nav-text">4.写代码</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#undefined"><span class="nav-number">1.4.0.1.</span> <span class="nav-text">UsageOfMarkdown</span></a></li></ol></li></ol></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Linux常用命令"><span class="nav-number">1.</span> <span class="nav-text">Linux常用命令</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#简单命令"><span class="nav-number">1.1.</span> <span class="nav-text">简单命令</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#进程管理命令"><span class="nav-number">1.2.</span> <span class="nav-text">进程管理命令</span></a></li></ol></li></ol></div>
             
           </div>
           <div class="post-toc-indicator-bottom post-toc-indicator"></div>
