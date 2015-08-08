@@ -1,35 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom">
-<title type="text">QXiaoQ's BlahBlah</title>
-<subtitle type="html">...</subtitle>
-<updated></updated>
-<id></id>
-<link rel="alternate" type="text/html"
-   hreflang="en" href="http://example.org/"/>
-<copyright>reserved</copyright>
-<generator uri="http://www.example.com/" version="1.0"></generator>
-<entry>
-    <title></title>
-    <link rel="alternate" type="text/html"
-     href="http://example.org/2005/04/02/atom"/>
-    
-    <id></id>
-    <updated></updated>
-    <published></published>
-    <author>
-      <name></name>
-      <uri></uri>
-      <email></email>
-    </author>
-    <contributor>
-      <name></name>
-      <uri></uri>
-    </contributor>
-    <contributor>
-      <name></name>
-      <uri></uri>
-    </contributor>
-    <content type="xhtml" xml:lang="en"
-     xml:base="http://diveintomark.org/"></content>
-</entry>
-</feed>
+    <feed xmlns="http://www.w3.org/2005/Atom">
+        <title type="text">QXiaoQ's BlahBlah</title>
+        <subtitle type="html">欢迎订阅</subtitle>
+        <updated></updated>
+        <id></id>
+        <link rel="alternate" type="text/html" hreflang="en" href="http://blog.xuanxiewu.com/" />
+        <copyright>reserved</copyright>
+        <generator uri="http://blog.xuanxiewu.com/" version="1.0"></generator>
+        <entry>
+            <title></title>
+            <link rel="alternate" type="text/html" href="http://blog.xuanxiewu.com/2005/04/02/atom" />
+            <id></id>
+            <updated></updated>
+            <published></published>
+            <author>
+                <name></name>
+                <uri></uri>
+                <email></email>
+            </author>
+            <contributor>
+                <name></name>
+                <uri></uri>
+            </contributor>
+            <contributor>
+                <name></name>
+                <uri></uri>
+            </contributor>
+            <content type="xhtml" xml:lang="en" xml:base="http://diveintomark.org/"></content>
+        </entry>
+    </feed>
